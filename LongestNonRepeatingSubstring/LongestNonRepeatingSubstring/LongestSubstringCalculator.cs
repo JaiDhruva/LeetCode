@@ -2,14 +2,14 @@
 {
     public class LongestSubstringCalculator
     {
-        public int LengthOfLongestSubstring(string s)
+        public int GetLengthOfLongestSubstring(string sampleString)
         {
             List<char> visited = new List<char>();
-            char[] charArray = s.ToCharArray();
+            char[] charArray = sampleString.ToCharArray();
             string substring = string.Empty;
             string max = string.Empty;
 
-            if (String.IsNullOrEmpty(s))
+            if (String.IsNullOrEmpty(sampleString))
                 return 0;
             int size = charArray.Length;
             for (int i = 0; i < size; i++)

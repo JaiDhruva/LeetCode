@@ -9,7 +9,7 @@ namespace LongestNonRepeatingSubstringTests
         public void LongestSubstringCalculator_ReturnsSuccess()
         {
             var calculator = new LongestSubstringCalculator();
-            var substring = calculator.LengthOfLongestSubstring("abcb");
+            var substring = calculator.GetLengthOfLongestSubstring("abcb");
             Assert.Equal(3, substring);
         }
 
@@ -17,7 +17,7 @@ namespace LongestNonRepeatingSubstringTests
         public void LongestSubstringCalculator_WithOnlyOneCharacter()
         {
             var calculator = new LongestSubstringCalculator();
-            var substring = calculator.LengthOfLongestSubstring("a");
+            var substring = calculator.GetLengthOfLongestSubstring("a");
             Assert.Equal(1, substring);
         }
     }
