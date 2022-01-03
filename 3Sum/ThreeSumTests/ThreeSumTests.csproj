@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\3SumClosest\3SumClosest.csproj" />
     <ProjectReference Include="..\ThreeSum\ThreeSum.csproj" />
   </ItemGroup>
 
