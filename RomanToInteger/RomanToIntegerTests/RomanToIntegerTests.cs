@@ -1,4 +1,5 @@
 using RomanToInteger;
+using StrStr;
 using Xunit;
 
 namespace RomanToIntegerTests
@@ -19,6 +20,15 @@ namespace RomanToIntegerTests
         {
             var converter = new RomanToIntegerConverter();
             var response = converter.Convert("IX");
+            Assert.Equal(9, response);
+
+        }
+
+        [Fact]
+        public void StrImplementation()
+        {
+            var converter = new StrImplementation();
+            var response = converter.GetNeedle("IX","X");
             Assert.Equal(9, response);
 
         }
